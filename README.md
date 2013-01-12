@@ -1,12 +1,14 @@
 # eZ Publish extension: fishme_googletools
 
-from David Hohl - feel free and contact me info@fishme.de or www.ez-publish-blog.de
+author: David Hohl
 
+website: www.fishme.de and www.ez-publish-blog.de
 
 The eZ Publish fishme_googletools extension includes follow tools:
 
 - Google URL Shortener
 - Google Analytics
+- Google Maps (only GeoCords)
 
 
 ## Requirements:
@@ -23,6 +25,10 @@ The eZ Publish fishme_googletools extension includes follow tools:
 ## Examples:
 
 ### Google URL Shortener
+
+*Features*:
+- convert your long url to a short url
+- convert the short url to your long url
 
 convert your url to google short url
 ```bash
@@ -49,12 +55,31 @@ generate google analytics code (for more options look into the fishme_googletool
 {$google_analytics}
 ```
 
+### Google Maps
+
+*Features*:
+- return the lat and lng by an address
+- return the address by lat and lng
+
+return the lat and lng geo cords
+```bash
+{def $google_maps = fs_get_GoogleMaps_geocode_by_address('your address')}
+{$google_maps.lat}
+{$google_maps.lng}
+{$google_maps.addtional}
+```
+return the address
+```bash
+{def $google_maps = fs_get_GoogleMaps_geocode_by_latlng('52.5153264','13.4718734')}
+{$google_maps.address}
+{$google_maps.addtional}
+```
+
 ## Roadmap:
 
 1. Google Sitemap
        generate google sitemap
 2. Google Maps V3
-       get address position lng/lat
        generate map
 
 3. Google Fonts
@@ -64,6 +89,8 @@ generate google analytics code (for more options look into the fishme_googletool
 
 
 ## Versions:
+- 1.0.2
+    - add Google Maps (GeoCords)
 - 1.0.1
    - add Google URL Shortner
    - add Google Analytics
