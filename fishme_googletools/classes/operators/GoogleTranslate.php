@@ -71,7 +71,7 @@ class fs_GoogleTranslate_operator
     }
 
     public function fs_get_GoogleTranslate($namedParameters) {
-        return $this->get_Translation($namedParameters,'latlng');
+        return $this->get_Translation($namedParameters);
     }
 
     private function get_Translation($params) {

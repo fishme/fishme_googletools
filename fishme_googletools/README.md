@@ -1,8 +1,6 @@
 # eZ Publish extension: fishme_googletools
 
-author: David Hohl
-
-website: www.fishme.de and www.ez-publish-blog.de
+from David Hohl - feel free and contact me on www.ez-publish-blog.de or www.fishme.de
 
 The eZ Publish fishme_googletools extension includes follow tools:
 
@@ -108,7 +106,7 @@ params:
 
 ## Versions:
 - 1.0.3
-    - add Googel Translate
+    - add Google Translate
 - 1.0.2
     - add Google Maps (GeoCords)
 - 1.0.1
