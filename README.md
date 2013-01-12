@@ -44,7 +44,7 @@ return the shorturl for the current url
 
 convert a shorturl to the default url
 ```bash
-{def $short_url = fs_get_GoogleUrlShortener()}
+{def $short_url = fs_get_GoogleUrlShortener('your short url')}
 ```
 
 ### Google Analytics
