@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<software>
+    <metadata>
+        <name>Fishme Googletools</name>
+        <version>1.0.1</version>
+        <copyright>Copyright (C) 2005-2013 fishme.de</copyright>
+        <license>GNU General Public License v2</license>
+        <info_url>https://github.com/fishme/fishme_googletools</info_url>
+    </metadata>
+</software>
