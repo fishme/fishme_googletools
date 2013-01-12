@@ -1,6 +1,7 @@
 # eZ Publish extension: fishme_googletools
 
 author: David Hohl
+
 website: www.fishme.de and www.ez-publish-blog.de
 
 The eZ Publish fishme_googletools extension includes follow tools:
