@@ -64,6 +64,6 @@ generate google analytics code (for more options look into the fishme_googletool
 
 
 ## Versions:
-11.0.1
-    + add Google URL Shortner
-    + add Google Analytics
+- 1.0.1
+   - add Google URL Shortner
+   - add Google Analytics
