@@ -33,3 +33,13 @@ $eZTemplateOperatorArray[] =
 			'fs_get_GoogleMaps_geocode_by_address'
 		)
 	);
+
+
+$eZTemplateOperatorArray[] =
+	array(
+		'script'         => 'extension/fishme_site/classes/operators/GoogleTranslate.php',
+		'class'          => 'fs_GoogleTranslate_operator',
+		'operator_names' => array (
+			'fs_get_GoogleTranslate'
+		)
+	);

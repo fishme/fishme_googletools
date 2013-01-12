@@ -31,7 +31,7 @@ class fishme_googletoolsInfo
         $eZCopyrightString = 'Copyright (C) 2005-' . date('Y') . ' fishme.de';
 
         return array( 'Name'      => '<a href="https://github.com/fishme/fishme_googletools">fishme_googletools</a> extension',
-                      'Version'   => '1.0.1',
+                      'Version'   => '1.0.3',
                       'Copyright' => $eZCopyrightString,
                       'License'   => 'GNU General Public License v2.0'
                     );

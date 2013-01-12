@@ -9,6 +9,7 @@ The eZ Publish fishme_googletools extension includes follow tools:
 - Google URL Shortener
 - Google Analytics
 - Google Maps (only GeoCords)
+- Google Translate
 
 
 ## Requirements:
@@ -69,11 +70,28 @@ return the lat and lng geo cords
 {$google_maps.addtional}
 ```
 return the address
+params:
+    - lat
+    - lng
 ```bash
 {def $google_maps = fs_get_GoogleMaps_geocode_by_latlng('52.5153264','13.4718734')}
 {$google_maps.address}
 {$google_maps.addtional}
 ```
+
+### Google Translate
+
+info: Google Translate is not a free service, please check the pricing https://developers.google.com/translate/v2/pricing?hl=de
+
+params:
+    - your text
+    - source language
+    - target language
+```bash
+{def $goolge_translation = fs_get_GoogleTranslate('Hello World!', 'en', 'de')}
+{$goolge_translation}
+```
+
 
 ## Roadmap:
 
@@ -89,6 +107,8 @@ return the address
 
 
 ## Versions:
+- 1.0.3
+    - add Googel Translate
 - 1.0.2
     - add Google Maps (GeoCords)
 - 1.0.1

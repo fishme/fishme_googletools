@@ -2,8 +2,8 @@
 
 [Settings]
 # you get the key for all services on https://code.google.com/apis/console
-# you need this key for "Google Url Shortener"
-key=AIzaSyAndkLgoQzLV0Blg0QaQVzLesd6nfD1yjs
+# you need this key for "Google Url Shortener", "Google Translate"
+key=XXX
 
 [GoogleUrlShortener]
 api_url=https://www.googleapis.com/urlshortener/v1/url
@@ -17,4 +17,9 @@ extra_code=_gaq.push (['_gat._anonymizeIp']);
 [GoogleMaps]
 geocode_api_url=http://maps.googleapis.com/maps/api/geocode/json
 sensor=true
+
+[GoogleTranslate]
+api_url=https://www.googleapis.com/language/translate/v2
+
+
 */ ?>
