@@ -2,7 +2,7 @@
 
 [Settings]
 # you get the key for all services on https://code.google.com/apis/console
-key=AIzaSyAndkLgoQzLV0Blg0QaQVzLesd6nfD1yjs
+key=XXXX
 
 [GoogleUrlShortener]
 api_url=https://www.googleapis.com/urlshortener/v1/url
