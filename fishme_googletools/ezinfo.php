@@ -24,7 +24,7 @@
 // ## END COPYRIGHT, LICENSE AND WARRANTY NOTICE ##
 //
 
-class xrowecommerceInfo
+class fishme_googletoolsInfo
 {
     static function info()
     {
