@@ -43,3 +43,15 @@ $eZTemplateOperatorArray[] =
 			'fs_get_GoogleTranslate'
 		)
 	);
+
+
+$eZTemplateOperatorArray[] =
+	array(
+		'script'         => 'extension/fishme_site/classes/operators/GoogleShoppingSearch.php',
+		'class'          => 'fs_GoogleShoppingSearch_operator',
+		'operator_names' => array (
+			'fs_get_GoogleShoppingSearch',
+			'fs_get_GoogleShoppingSearch_facet',
+			'fs_get_GoogleShoppingSearch_filter'
+		)
+	);

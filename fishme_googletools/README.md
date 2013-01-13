@@ -12,6 +12,10 @@ The eZ Publish fishme_googletools extension includes follow tools:
 
 ## Requirements:
 - eZ Publish 4.x
+- Google API Key https://code.google.com/apis/console for
+    - Google URL Shortener
+    - Google Translate
+    - Google Shopping Search
 
 ## Install:
 - Enable the extension in eZ Publish. Do this by opening settings/override/site.ini.append.php ,
@@ -90,21 +94,48 @@ params:
 {$goolge_translation}
 ```
 
+### Google Shopping Search
+
+*features:*
+    - product search
+    - price filter
+    - brand filter
+    - paging
+    - boosting
+    - sort
+    - availability
+    - currency, country and language support
+
+you need a google
+
+include follow Template in your layout:
+```bash
+{include uri='design:googleshopping/list.tpl'}
+```
+search for products:
+```bash
+{def    $filter = fs_get_GoogleShoppingSearch_filter()
+        $products = fs_get_GoogleShoppingSearch($search_text, $offset, $filter)
+}
+```
+for informations look into the operator class /extension/fishme_googletools/classes/operators/GoogleShoppingSearch.php or into /extension/fishme_googletools/design/standard/templates/googleshopping/list.tpl
+Settings: (fishme_googletools.ini.settings.php)
+
 
 ## Roadmap:
 
-1. Google Sitemap
-       generate google sitemap
-2. Google Maps V3
-       generate map
-
+1. Google Sitemap (generate google sitemap)
+2. Google Maps V3 (generate map)
 3. Google Fonts
 4. Google+
 5. Static Google Maps
 6. Google YouTube
+7. Google Shopping search (facets)
 
 
 ## Versions:
+- 1.0.4
+    - add Google Shopping Search
 - 1.0.3
     - add Google Translate
 - 1.0.2
