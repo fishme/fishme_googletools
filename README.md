@@ -8,6 +8,7 @@ The eZ Publish fishme_googletools extension includes follow tools:
 - Google Analytics
 - Google Maps (only GeoCords)
 - Google Translate
+- Google ShoppingSearch
 
 
 ## Requirements:
@@ -52,6 +53,9 @@ convert a shorturl to the default url
 
 ### Google Analytics
 
+**Features:**
+- output default google anayltics code
+
 generate google analytics code (for more options look into the fishme_googletools.ini)
 ```bash
 {def $google_analytics = fs_get_GoogleAnalyticsCode()}
@@ -60,7 +64,7 @@ generate google analytics code (for more options look into the fishme_googletool
 
 ### Google Maps
 
-*Features*:
+**Features:**
 - return the lat and lng by an address
 - return the address by lat and lng
 
@@ -83,6 +87,9 @@ params:
 
 ### Google Translate
 
+**Features:**
+- translate text from X language to Y language
+
 info: Google Translate is not a free service, please check the pricing https://developers.google.com/translate/v2/pricing?hl=de
 
 params:
@@ -96,15 +103,15 @@ params:
 
 ### Google Shopping Search
 
-*features:*
-    - product search
-    - price filter
-    - brand filter
-    - paging
-    - boosting
-    - sort
-    - availability
-    - currency, country and language support
+**Features:**
+- product search
+- price filter
+- brand filter
+- paging
+- boosting
+- sort
+- availability
+- currency, country and language support
 
 you need a google
 
