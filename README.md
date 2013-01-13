@@ -8,6 +8,7 @@ The eZ Publish fishme_googletools extension includes follow tools:
 - Google Analytics
 - Google Maps (only GeoCords)
 - Google Translate
+- Google ShoppingSearch
 
 
 ## Requirements:
