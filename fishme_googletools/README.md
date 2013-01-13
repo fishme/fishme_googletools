@@ -30,7 +30,7 @@ The eZ Publish fishme_googletools extension includes follow tools:
 
 ### Google URL Shortener
 
-*Features*:
+**Features**:
 - convert your long url to a short url
 - convert the short url to your long url
 
