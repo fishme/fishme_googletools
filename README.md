@@ -1,6 +1,6 @@
 # eZ Publish extension: fishme_googletools
 
-from David Hohl - feel free and contact me on www.ez-publish-blog.de or www.fishme.de
+from David Hohl - feel free and contact me about www.ez-publish-blog.de or www.fishme.de
 
 The eZ Publish fishme_googletools extension includes follow tools:
 
@@ -9,6 +9,7 @@ The eZ Publish fishme_googletools extension includes follow tools:
 - Google Maps (only GeoCords)
 - Google Translate
 - Google ShoppingSearch
+- Google Youtube
 
 
 ## Requirements:
@@ -128,6 +129,15 @@ search for products:
 for informations look into the operator class /extension/fishme_googletools/classes/operators/GoogleShoppingSearch.php or into /extension/fishme_googletools/design/standard/templates/googleshopping/list.tpl
 Settings: (fishme_googletools.ini.settings.php)
 
+### Google YouTube Player
+
+**Features**
+- as customtag in ezoe (ezxml)
+- you can include it
+
+```bash
+{include uri='design:googleyoutube/player.tpl' googleyoutube_code='0_lFJW-ULMo'}
+```
 
 ## Roadmap:
 
@@ -136,11 +146,12 @@ Settings: (fishme_googletools.ini.settings.php)
 3. Google Fonts
 4. Google+
 5. Static Google Maps
-6. Google YouTube
 7. Google Shopping search (facets)
 
 
 ## Versions:
+- 1.0.5
+    - add Google YouTube Player as Customtag
 - 1.0.4
     - add Google Shopping Search
 - 1.0.3

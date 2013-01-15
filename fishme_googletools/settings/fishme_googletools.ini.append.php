@@ -67,5 +67,41 @@ sortBy=price:ascending
 crowdBy=disabled
 
 ##################################################
+[GoogleYouTube]
+api_url=https://www.youtube.com/v/
+
+# player settings
+width=640
+height=390
+
+# 0 = off
+# 1 = on
+autoplay=0
+
+#API Version
+version=3
+
+#options: white, red, black, default
+color=white
+
+# 0 = Player controls do not display in the player. For AS3 players, the Flash player loads immediately.
+# 1 = Player controls display in the player. For AS3 players, the Flash player loads immediately.
+# 2 = Player controls display in the player. For AS3 players, the Flash player loads afer the user initiates the video playback.
+controls=1
+
+# Setting to 1 will disable the player keyboard controls.
+disablekb=0
+
+# Values: 1 or 3. Default is 1. Setting to 1 will cause video annotations to be shown by default, whereas setting to 3 will cause video annotation to not be shown by default.
+iv_load_policy=1
+
+# This parameter indicates whether the player should show related videos when playback of the initial video ends.
+rel=1
+
+#dark and light
+theme=light
+
+
+##################################################
 
 */ ?>
