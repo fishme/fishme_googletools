@@ -3,7 +3,33 @@
 [Settings]
 # you get the key for all services on https://code.google.com/apis/console
 # you need this key for "Google Url Shortener", "Google Translate", "Google Shopping Search"
+# under "API Access" generate a "New Browser Key" and copy the "API Key"
 key=XXX
+
+
+
+################################################
+# Only if you use the google_api with AUTH2
+################################################
+
+# Installation!
+# you need to activate the AUTH2 in https://code.google.com/apis/console/ under API Access
+# 1) and add a "New ClientID"
+# 2) select Web application
+# 3) input your domain
+# 4) click on "more options"
+# 5) in the field for "Authorized Redirect URIs" remove "/oauth2callback"
+# 6) and press "Create Client ID"
+
+# Copy your "Client ID"
+clientID=XXX
+
+# Copy your "Client Secret"
+clientSecret=XXX
+
+# under "API Access" generate a "New Server Key" and the Server IP and copy the "API Key"
+developerkey=XXX
+
 
 ##################################################
 
@@ -174,8 +200,6 @@ api_url_loader=ajax.googleapis.com/ajax/libs/webfont/1/webfont.js
 
 webfont_loader[]
 webfont_loader[google]= { families: [ 'Tangerine', 'Cantarell' ] }
-
-
 
 ##################################################
 

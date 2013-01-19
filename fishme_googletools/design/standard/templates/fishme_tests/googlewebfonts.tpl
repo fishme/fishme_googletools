@@ -1,7 +1,7 @@
 
 {* CSS LOADER  *}
 <h1>LOAD GOOGLE FONTS ABOUT CSS</h1>
-<div style="font-family: 'Tangerine', serif;font-size:40px;margin:200px;" class="font-effect-shadow-multiple">Hello World!</div>
+<div style="font-family: 'Tangerine', serif;font-size:40px;margin-left:50px;margin-top:50px;" class="font-effect-shadow-multiple">Hello World!</div>
 
 <h1>LOAD GOOGLE FONTS ABOUT JS</h1>
 {* JS LOADER *}
@@ -15,6 +15,7 @@
   }
   .wf-active p {
     font-family: 'Tangerine', serif
+    font-size:20px;
   }
   .wf-loading h1 {
     font-family: serif;

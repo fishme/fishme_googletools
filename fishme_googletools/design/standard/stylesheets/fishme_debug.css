@@ -1,0 +1,115 @@
+
+#fm-menu h4 {
+    padding-left: 10px;
+}
+
+.fm-hide {
+    /*display:none;*/
+}
+
+#fm-wrapper {
+    background: #0769AD;
+    margin: 0 auto;
+    padding: 0 20px;
+    padding-bottom: 100px;
+}
+#fm-container {
+    background-color: #fff;
+    -webkit-box-shadow: -3px 0 5px -3px rgba(1, 1, 1, 0.87), 3px 0 5px -3px rgba(1, 1, 1, 0.87);
+    box-shadow: -3px 0 5px -3px rgba(1, 1, 1, 0.87), 3px 0 5px -3px rgba(1, 1, 1, 0.87);
+    padding: 20px 0;
+    border-radius: 10px 10px 10px 10px;
+    margin-top:50px;
+}
+#fm-menu-top {
+    background-color: rgba(0, 0, 0, 0.18);
+    border-radius: 10px 10px 0 0;
+    border-right: 1px solid rgba(2, 2, 2, 0.28);
+    border-left: 1px solid rgba(2, 2, 2, 0.28);
+    border-top: 1px solid rgba(250, 250, 250, 0.27);
+    -webkit-box-shadow: rgba(255,255,255,0.3) 0 1px 0, rgba(0,0,0,0.3) 0 -1px 0;
+    box-shadow: rgba(255,255,255,0.3) 0 1px 0, rgba(0,0,0,0.3) 0 -1px 0;
+    -webkit-box-shadow: 0 0 3px rgba(1, 1, 1, 0.7);
+    box-shadow: 0 0 5px rgba(1, 1, 1, 0.7);
+    margin-bottom: 62px;
+}
+
+#fm-menu-top ul {
+    margin: 0;
+    float: left;
+    width: 70%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#fm-menu-top li {
+    display: inline;
+    float: left;
+    font: normal normal 16px "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+    margin-right: 2px;
+}
+
+#fm-menu-top li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 6px 10px;
+    display: block;
+    border: 1px solid transparent;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.76);
+}
+#fm-menu-top ul, #fm-menu-top ol {
+    list-style: none;
+    list-style-image: none;
+}
+
+#fm-menu {
+    float:left;
+    width:20%;
+}
+#fm-menu li {
+    padding-left: 20px;
+    line-height: 15px;
+    list-style-type: none;
+    background: url(../images/bullet.png) no-repeat 0 14px;
+    text-shadow: 0 1px 0 #ffffff;
+}
+
+#fm-examples {
+    float:right;
+    width:80%;
+
+}
+.fm-row {
+    width: 1240px;
+    max-width: 100%;
+    min-width: 768px;
+    margin: 0 auto;
+}
+.fm-constrain {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#fm-footer {
+    font-size:11px;
+    color:#000;
+    text-align: right;
+    width:97%;
+    padding-right: 20px;
+}
+.fm-clear {
+    clear:both;
+}
+.fm-example-output {
+    border: 3px solid #ddd;
+    background-color: #eee;
+    padding: 20px;
+}
+hr {
+    border-top: 5px solid #0769AD;
+}
+/* eZ Debug */
+
+#debug {
+    margin-top:50px;
+}

@@ -55,3 +55,12 @@ $eZTemplateOperatorArray[] =
 			'fs_get_GoogleShoppingSearch_filter'
 		)
 	);
+
+$eZTemplateOperatorArray[] =
+	array(
+		'script'         => 'extension/fishme_googletools/classes/operators/GoogleAPI.php',
+		'class'          => 'fs_GoogleAPI_operator',
+		'operator_names' => array (
+			'fs_init_GoogleAPI'
+		)
+	);

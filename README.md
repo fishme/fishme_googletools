@@ -11,14 +11,19 @@ The eZ Publish fishme_googletools extension includes follow tools:
 - Google ShoppingSearch
 - Google Youtube
 - Google Webfonts
+- Google Auth2 Connector
+    - Google+
 
 
 ## Requirements:
 - eZ Publish 4.x
-- Google API Key https://code.google.com/apis/console for
+- Google API Browser Key https://code.google.com/apis/console for
     - Google URL Shortener
     - Google Translate
     - Google Shopping Search
+- Google Auth2 Key & Server Key
+    - Google Auth2
+    - Google+
 
 ## Install:
 - Enable the extension in eZ Publish. Do this by opening settings/override/site.ini.append.php ,
@@ -28,7 +33,15 @@ The eZ Publish fishme_googletools extension includes follow tools:
 - Clear your cache
 - look into extension/fishme_googletools/settings/fishme_googletools.ini.settings.php
 
+**Info: for all functions with Auth2 you need the Server Key & Auth2 Key**
+
+
 ## Examples:
+
+Examples
+```bash
+{include uri='design:fishme_tests/googleapi.tpl'}
+```
 
 ### Google URL Shortener
 
@@ -162,16 +175,24 @@ for examples - include in your content
 or look into extension/fishme_googletools/settings/fishme_googletools.ini.settings.php
 
 
+### Google+
+
+
+
+
 ## Roadmap:
 
 1. Google Sitemap (generate google sitemap)
 2. Google Maps V3 (generate map)
-3. Google+
-4. Static Google Maps
-5. Google Shopping search (facets)
-
+3. Static Google Maps
+4. Google Shopping search (facets)
+5. Google+ User (register, update profil in eZ Publish)
 
 ## Versions:
+- 1.0.7
+    - add google Auth2
+    - add google+ Login
+    - add Example List
 - 1.0.6
     - add Google Webfonts (load font by CSS or JS)
 - 1.0.5
