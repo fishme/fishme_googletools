@@ -4,7 +4,7 @@ $eZTemplateOperatorArray   = array();
 
 $eZTemplateOperatorArray[] =
 	array(
-		'script'         => 'extension/fishme_site/classes/operators/GoogleUrlShortener.php',
+		'script'         => 'extension/fishme_googletools/classes/operators/GoogleUrlShortener.php',
 		'class'          => 'fs_GoogleUrlShortener_operator',
 		'operator_names' => array (
 			'fs_set_GoogleUrlShortener',
@@ -16,7 +16,7 @@ $eZTemplateOperatorArray[] =
 
 $eZTemplateOperatorArray[] =
 	array(
-		'script'         => 'extension/fishme_site/classes/operators/GoogleAnalytics.php',
+		'script'         => 'extension/fishme_googletools/classes/operators/GoogleAnalytics.php',
 		'class'          => 'fs_GoogleAnalytics_operator',
 		'operator_names' => array (
 			'fs_get_GoogleAnalyticsCode'
@@ -26,7 +26,7 @@ $eZTemplateOperatorArray[] =
 
 $eZTemplateOperatorArray[] =
 	array(
-		'script'         => 'extension/fishme_site/classes/operators/GoogleMaps.php',
+		'script'         => 'extension/fishme_googletools/classes/operators/GoogleMaps.php',
 		'class'          => 'fs_GoogleMaps_operator',
 		'operator_names' => array (
 			'fs_get_GoogleMaps_geocode_by_latlng',
@@ -37,7 +37,7 @@ $eZTemplateOperatorArray[] =
 
 $eZTemplateOperatorArray[] =
 	array(
-		'script'         => 'extension/fishme_site/classes/operators/GoogleTranslate.php',
+		'script'         => 'extension/fishme_googletools/classes/operators/GoogleTranslate.php',
 		'class'          => 'fs_GoogleTranslate_operator',
 		'operator_names' => array (
 			'fs_get_GoogleTranslate'
@@ -47,7 +47,7 @@ $eZTemplateOperatorArray[] =
 
 $eZTemplateOperatorArray[] =
 	array(
-		'script'         => 'extension/fishme_site/classes/operators/GoogleShoppingSearch.php',
+		'script'         => 'extension/fishme_googletools/classes/operators/GoogleShoppingSearch.php',
 		'class'          => 'fs_GoogleShoppingSearch_operator',
 		'operator_names' => array (
 			'fs_get_GoogleShoppingSearch',
