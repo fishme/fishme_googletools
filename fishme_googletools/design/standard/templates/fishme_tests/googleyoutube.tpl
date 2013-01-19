@@ -1,0 +1,1 @@
+{include uri='design:googleyoutube/player.tpl' googleyoutube_code='K3PXYvuxivg'}

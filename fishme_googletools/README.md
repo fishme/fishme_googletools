@@ -10,6 +10,7 @@ The eZ Publish fishme_googletools extension includes follow tools:
 - Google Translate
 - Google ShoppingSearch
 - Google Youtube
+- Google Webfonts
 
 
 ## Requirements:
@@ -98,8 +99,8 @@ params:
     - source language
     - target language
 ```bash
-{def $goolge_translation = fs_get_GoogleTranslate('Hello World!', 'en', 'de')}
-{$goolge_translation}
+{def $google_translation = fs_get_GoogleTranslate('Hello World!', 'en', 'de')}
+{$google_translation}
 ```
 
 ### Google Shopping Search
@@ -139,17 +140,40 @@ Settings: (fishme_googletools.ini.settings.php)
 {include uri='design:googleyoutube/player.tpl' googleyoutube_code='0_lFJW-ULMo'}
 ```
 
+### Google Webfonts
+
+**Features:**
+- use a google webfont in your site
+- and/or Typekit http://typekit.com/
+- and/or Ascender http://www.fontslive.com/
+- and/or Fonts.com web fonts http://webfonts.fonts.com/
+- and/or Fontdeck http://fontdeck.com/
+
+Include in your page_head_style.tpl about any eZ Includes follow line
+
+```bash
+    {include uri='design:googlewebfonts/set_fonts.tpl'}
+```
+
+for examples - include in your content
+```bash
+    {include uri='design:fishme_tests/googlewebfonts.tpl'}
+```
+or look into extension/fishme_googletools/settings/fishme_googletools.ini.settings.php
+
+
 ## Roadmap:
 
 1. Google Sitemap (generate google sitemap)
 2. Google Maps V3 (generate map)
-3. Google Fonts
-4. Google+
-5. Static Google Maps
-7. Google Shopping search (facets)
+3. Google+
+4. Static Google Maps
+5. Google Shopping search (facets)
 
 
 ## Versions:
+- 1.0.6
+    - add Google Webfonts (load font by CSS or JS)
 - 1.0.5
     - add Google YouTube Player as Customtag
 - 1.0.4

@@ -103,5 +103,80 @@ theme=light
 
 
 ##################################################
+[GoogleWebFonts]
+
+# include the webfont with css or js
+# live example: look into fishme_tests/googlewebfonts.tpl
+
+include_by[]
+include_by[]=css
+include_by[]=js
+
+
+# all googlewebfonts - http://www.google.com/webfonts
+
+# include you font about CSS
+api_url=http://fonts.googleapis.com/css
+
+# description
+# family:style,nextstyle
+# Tangerine:bold,bolditalic
+
+# style
+# bold          = bold or b
+# italic        = italic or i or a numerical weight such as 700
+# bold italic   = bolditalic or bi
+
+# effects - this settings works only on a set of browsers please check the google documentation https://developers.google.com/webfonts/docs/getting_started?hl=de#Effects
+# brick-sign or canvas-print ....
+
+# example without effects and style
+# fonts[]=family=Tangerine
+
+
+# example without any effects, but with style
+# fonts[]=family=Tangerine:bold,bolditalic
+
+# exmaple with a brick effect
+# just use &effect=EFFECTNAME
+# fonts[]=family=Tangerine:bold,bolditalic&effect=shadow-multiple
+
+fonts[]
+fonts[]=family=Tangerine:bold,bolditalic&effect=shadow-multiple
+
+
+## WEB FONT LOADER!
+
+# load any font from your fontprovider
+# Google
+# Typekit               - http://typekit.com/
+# Ascender              - http://www.fontslive.com/
+# Fonts.com web fonts   - http://webfonts.fonts.com/
+# Fontdeck              - http://fontdeck.com/
+
+# settings for googlewebfonts Loader
+# please read the Load documentation for more use  - https://developers.google.com/webfonts/docs/webfont_loader
+
+# api url without http or https
+api_url_loader=ajax.googleapis.com/ajax/libs/webfont/1/webfont.js
+
+# example for typekit
+# webfont_loader[typekit] = typekit: { id: 'myKitId'}
+#
+# Description               KEY
+# Google                - google
+# Typekit               - typekit
+# Ascender              - ascender
+# Fonts.com web fonts   - monotype
+# Fontdeck              - fontdeck
+#
+# of course you can use more as one!
+
+webfont_loader[]
+webfont_loader[google]= { families: [ 'Tangerine', 'Cantarell' ] }
+
+
+
+##################################################
 
 */ ?>
