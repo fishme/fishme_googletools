@@ -177,6 +177,18 @@ or look into extension/fishme_googletools/settings/fishme_googletools.ini.settin
 
 ### Google+
 
+**Features:**
+- login google+
+- get all personal information about the user
+
+```bash
+    {def $google_plus = fs_init_GoogleAPI('PlusService')}
+    {if $google_plus.login}
+        <a href="{$google_plus.login}">klick</a>
+    {else}
+        {$google_plus.result|attribute(show,1)}
+    {/if}
+```
 
 
 
