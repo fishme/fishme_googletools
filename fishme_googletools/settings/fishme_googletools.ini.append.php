@@ -50,6 +50,16 @@ extra_code=_gaq.push (['_gat._anonymizeIp']);
 geocode_api_url=http://maps.googleapis.com/maps/api/geocode/json
 sensor=true
 
+# google maps about js
+geocode_js_url=http://maps.googleapis.com/maps/api/js?v=3.exp
+sensor_js=false
+
+# custom pin for the marker
+# for the default pin comment the icon_path (pin icon from http://www.icons-land.com)
+# default pins are: pin_blue.png, pin_red.png, pin_green.png
+icon_path=/extension/fishme_googletools/design/standard/images/fs_google_maps/pin_blue.png
+
+
 ##################################################
 
 [GoogleTranslate]

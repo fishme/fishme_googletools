@@ -6,7 +6,9 @@ The eZ Publish fishme_googletools extension includes follow tools:
 
 - Google URL Shortener
 - Google Analytics
-- Google Maps (only GeoCords)
+- Google Maps
+    - GeoCords (operator)
+    - simple Map (customtag)
 - Google Translate
 - Google ShoppingSearch
 - Google Youtube
@@ -82,6 +84,10 @@ generate google analytics code (for more options look into the fishme_googletool
 **Features:**
 - return the lat and lng by an address
 - return the address by lat and lng
+- simple google map (customtag)
+    - set address
+    - set zoom level
+    - optional: width and height
 
 return the lat and lng geo cords
 ```bash
@@ -195,12 +201,15 @@ or look into extension/fishme_googletools/settings/fishme_googletools.ini.settin
 ## Roadmap:
 
 1. Google Sitemap (generate google sitemap)
-2. Google Maps V3 (generate map)
-3. Static Google Maps
-4. Google Shopping search (facets)
-5. Google+ User (register, update profil in eZ Publish)
+2. Static Google Maps
+3. Google Shopping search (facets)
+4. Google+ User (register, update profil in eZ Publish)
+5. Google Map (search address, set more pins about the backend, drag drop pins about the backend)
 
 ## Versions:
+- 1.0.8
+    - add simple Google Maps (CustomTag)
+    - fix google+ Login (token problem)
 - 1.0.7
     - add google Auth2
     - add google+ Login

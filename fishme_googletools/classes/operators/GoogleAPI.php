@@ -5,7 +5,7 @@
  * @author David Hohl <info@fishme.de>
  * @copyright Copyright (C) 2005-2013 fishme.de All rights reserved.
  * @license http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public License v2
- * @version 1.0.7
+ * @version 1.0.8
  */
 
 class fs_GoogleAPI_operator
@@ -77,7 +77,6 @@ class fs_GoogleAPI_operator
        
         $service = $namedParameters['service'];
         $params = $namedParameters['params'];
-
 
         // set auth2 configuration
         $this->client = new Google_Client();
@@ -215,7 +214,7 @@ class fs_GoogleAPI_operator
 
         if (isset($_GET['code'])) {
             $this->client->authenticate();
-            $_SESSION['token'] = $this->client->getAccessToken();
+            $_SESSION['access_token'] = $this->client->getAccessToken();
             //header('Location: http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF']);
             eZHTTPTool::redirect('http://' . $_SERVER['HTTP_HOST'].'?g_api=true');
             return true;

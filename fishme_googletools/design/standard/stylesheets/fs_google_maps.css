@@ -1,0 +1,16 @@
+
+#fs_map_canvas {
+    height: 450px;
+    width: 450px;
+}
+
+@media print {
+  html, body {
+    height: auto;
+  }
+
+  #fs_map_canvas {
+    height: 450px;
+    width: 450px;
+  }
+}
