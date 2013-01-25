@@ -2,7 +2,6 @@ if (typeof jQuery == 'undefined') {
     // jQuery is loaded => print the version
     alert('Please activate jQuery in your design.ini!');
 } else {
-
     function initialize() {
         var address = $('#fs_map_canvas').attr('data-address');
         
@@ -35,23 +34,13 @@ if (typeof jQuery == 'undefined') {
                 alert('Invalid address: ' + address);
            }
         });
-        
-
-        
-      }
-
-      // load googlemaps V3 script into the html
-      //var fs_google_maps = document.createElement('script'); fs_google_maps.type = 'text/javascript';
-      //fs_google_maps.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initialize';
-      //var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fs_google_maps, s);
-
-    function loadScript() {
-      var script = document.createElement("script");
-      script.type = "text/javascript";
-      script.src = $('#fs_map_canvas').attr('data-api-url') + "&callback=initialize";
-      document.body.appendChild(script);
     }
-
+    function loadScript() {
+        // load googlemaps V3 script into the html
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = $('#fs_map_canvas').attr('data-api-url') + "&callback=initialize";
+        document.body.appendChild(script);
+    }
     window.onload = loadScript;
-        
 }
